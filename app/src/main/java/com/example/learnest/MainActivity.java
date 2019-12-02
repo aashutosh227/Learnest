@@ -138,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,registrationActivity.class);
         startActivity(intent);
     }
-
+// Commit test
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
