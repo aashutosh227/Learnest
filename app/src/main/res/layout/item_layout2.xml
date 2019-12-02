@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/favs_rv"
+        >
+        <View
+            android:id="@+id/dividor1"
+            android:layout_width="300dp"
+            android:layout_height="0.4dp"
+            android:background="@color/gradStart"
+            android:layout_gravity="left|center"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_above="@+id/c_linlay"
+            />
+        <LinearLayout
+            android:id="@+id/c_linlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="0.3"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/java"
+                android:id="@+id/rv2_img"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Course: 9hr"
+                    android:textSize="12dp"
+                    android:textStyle="normal"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="JAVA Programming"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:id="@+id/rv2_title"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2.3k viewers"
+                    android:textSize="12dp"
+                    android:textStyle="normal"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:id="@+id/dividor2"
+            android:layout_width="300dp"
+            android:layout_height="0.4dp"
+            android:background="@color/gradStart"
+            android:layout_gravity="left|center"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/c_linlay"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

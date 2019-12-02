@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollviewHolder"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/pro2"
+            android:id="@+id/topHeader"
+            >
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:elevation="2dp"
+            android:background="@drawable/pro">
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:id="@+id/profile_iv"
+                android:src="@drawable/ic_profile1"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="150dp"
+            android:orientation="vertical"
+            android:elevation="0dp"
+            android:background="@color/transparent"
+            android:id="@+id/profile_ll"
+            >
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:elevation="1dp"
+                app:cardBackgroundColor="#f5f6fa"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="5dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ABC XYZ"
+                    android:textStyle="bold"
+                    android:textSize="24dp"
+                    android:layout_marginTop="75dp"
+                    android:layout_gravity="center_horizontal"/>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginLeft="200dp"
+            android:background="@drawable/pro1"
+            android:padding="10dp"
+            android:elevation="2dp"
+            android:id="@+id/cam_rellay"
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/camera521"
+                android:id="@+id/cam_iv"
+                android:background="@drawable/profile_image_view"
+                android:elevation="2dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_ll"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/rellay_style1"
+            android:elevation="3dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/skill_rellay"
+            >
+            <TextView
+                android:id="@+id/skill_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="Skill you're interested in"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:text="Programming"
+                android:textStyle="bold"
+                android:layout_below="@+id/skill_title"
+                android:textSize="18dp"/>
+
+            <View
+                android:id="@+id/div1"
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/gradStart"
+                android:layout_gravity="left|center"
+                android:layout_marginTop="12dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_below="@+id/t1"
+                />
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="5dp"
+                android:text="Software Development"
+                android:textStyle="bold"
+                android:layout_below="@+id/div1"
+                android:textSize="18dp"/>
+
+            <View
+                android:id="@+id/div2"
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/gradStart"
+                android:layout_gravity="left|center"
+                android:layout_marginTop="12dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_below="@+id/t2"
+                />
+            <TextView
+                android:id="@+id/t3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="5dp"
+                android:text="Databases"
+                android:textStyle="bold"
+                android:layout_below="@+id/div2"
+                android:textSize="18dp"/>
+
+            <View
+                android:id="@+id/div3"
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/gradStart"
+                android:layout_gravity="left|center"
+                android:layout_marginTop="12dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_below="@+id/t3"
+                />
+
+            <TextView
+                android:id="@+id/t4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="5dp"
+                android:text="MySQL"
+                android:textStyle="bold"
+                android:layout_below="@+id/div3"
+                android:textSize="18dp"/>
+
+            <View
+                android:id="@+id/div4"
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/gradStart"
+                android:layout_gravity="left|center"
+                android:layout_marginTop="12dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_below="@+id/t4"
+                />
+
+            <TextView
+                android:id="@+id/t5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="5dp"
+                android:text="Android App Development"
+                android:textStyle="bold"
+                android:layout_below="@+id/div4"
+                android:textSize="18dp"/>
+
+            <View
+                android:id="@+id/div5"
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/gradStart"
+                android:layout_gravity="left|center"
+                android:layout_marginTop="12dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_below="@+id/t5"
+                />
+            <TextView
+                android:id="@+id/t6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="5dp"
+                android:text="Web Development"
+                android:textStyle="bold"
+                android:layout_below="@+id/div5"
+                android:textSize="18dp"/>
+
+            <View
+                android:id="@+id/div6"
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/gradStart"
+                android:layout_gravity="left|center"
+                android:layout_marginTop="12dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_below="@+id/t6"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/skill_rellay"
+            android:paddingHorizontal="50dp"
+            android:id="@+id/button_rellay"
+            >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/logout_btn"
+                android:text="Logout"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_bg1"
+                android:layout_alignParentLeft="true"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/map_btn"
+                android:text="Show Maps"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_bg1"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_rellay"
+            android:paddingHorizontal="10dp"
+            tools:ignore="NotSibling">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update Password"
+                android:background="@color/transparent"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:id="@+id/update_pwd_btn"
+                android:layout_alignParentLeft="true"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete Account"
+                android:background="@color/transparent"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:id="@+id/delete_btn"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>
+
